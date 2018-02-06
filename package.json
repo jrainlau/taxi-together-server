@@ -1,0 +1,39 @@
+{
+  "name": "koa-learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "supervisor index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrainlau/koa-learning.git"
+  },
+  "author": "Jrain Lau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jrainlau/koa-learning/issues"
+  },
+  "homepage": "https://github.com/jrainlau/koa-learning#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "jsonwebtoken": "^8.0.1",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-jwt": "^3.2.2",
+    "koa-multer": "^1.0.2",
+    "koa-redis": "^3.1.1",
+    "koa-router": "^7.2.1",
+    "koa-session-minimal": "^3.0.4",
+    "koa-static": "^4.0.1",
+    "koa-views": "^6.1.0",
+    "koa2-cors": "^2.0.3",
+    "md5": "^2.2.1",
+    "mongoose": "^4.11.13",
+    "node-gyp": "^3.6.2"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.0"
+  }
+}
