@@ -9,5 +9,8 @@ bill
   .post('/leave', BillController.leaveBill)
   .post('/get', BillController.getBill)
   .post('/complete', BillController.completeBill)
+  .get('/', (ctx) => {
+    ctx.body = 'Hello Taxi!'
+  })
 
 module.exports = bill
