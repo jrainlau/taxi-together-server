@@ -1,5 +1,5 @@
 {
-  "name": "koa-learning",
+  "name": "taxi-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jrainlau/koa-learning.git"
+    "url": "git+https://github.com/jrainlau/taxi-server.git"
   },
   "author": "Jrain Lau",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jrainlau/koa-learning/issues"
+    "url": "https://github.com/jrainlau/taxi-server/issues"
   },
-  "homepage": "https://github.com/jrainlau/koa-learning#readme",
+  "homepage": "https://github.com/jrainlau/taxi-server#readme",
   "dependencies": {
     "ejs": "^2.5.7",
     "jsonwebtoken": "^8.0.1",
