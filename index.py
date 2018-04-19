@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, send_from_directory
 from controller import bill
 
 controller = bill.BillController()
@@ -8,21 +8,29 @@ app = Flask(__name__)
 def create():
 	return controller.createBill(request)
 
-@app.route('/enter', methods = ['POST'])
-def enter():
-	return controller.enterBill(request)
+@app.route('/join', methods = ['POST'])
+def join():
+	return controller.joinBill(request)
 
 @app.route('/leave', methods = ['POST'])
 def leave():
 	return controller.leaveBill(request)
 
-@app.route('/get', methods = ['POST'])
-def get():
+@app.route('/getBill', methods = ['POST'])
+def getBill():
 	return controller.getBill(request)
 
-@app.route('/complete', methods = ['POST'])
-def complete():
-	return controller.completeBill(request)
+@app.route('/inBill', methods = ['POST'])
+def inBill():
+	return controller.inBill(request)
+
+@app.route('/uploadImg', methods = ['POST'])
+def uploadImg():
+	return controller.uploadImg(request)
+
+@app.route('/getImg/<filename>')
+def getImg(filename):
+  return send_from_directory('./imgs', filename)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host = '0.0.0.0')
